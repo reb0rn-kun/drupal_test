@@ -1,0 +1,83 @@
+  
+//<![CDATA[
+var imgPath_809175354 = "http://a.ads2.msads.net/CIS/74/000/000/000/019/931.jpg";
+var imgWidth = 50;
+var imgHeight = 50;
+var textLink=('Как выбрать самый доходный вклад').replace(/\\n/gi, '<BR/>');
+textLink = textLink.replace(/<span style="color:#000000;">/gi, '<span>');
+textLink = textLink.replace(/<\/p><p>/gi, '<br/>');
+textLink = textLink.replace(/(<p>|<\/p>)/gi, '');
+var altText=('Нажмите здесь!').replace(/"/gi, '&quot;');
+var adWidth = 240;
+var adHeight = 70;
+
+switch(imgHeight) {
+	case 85:
+		adWidth = 275;
+		adHeight = 95;
+		break;
+	case 70:
+		adWidth = 260;
+		adHeight = 80;
+		break;
+	default:
+		adWidth = 240;
+		adHeight = 70;
+		break;
+}
+
+if(typeof(inDapIF) != "undefined") {
+	parent.dap_Resize(document.body.id, adWidth, adHeight);
+}
+
+
+var clkThr = 'http://g.msn.com/2AD0005Q/77000000000062470.1??PID=5889916&amp;UIT=G&amp;TargetID=100260880&amp;AN=809175354&amp;PG=RUSHP4&amp;ASID=0146b50777fb421ea39c96ba41072c8c';
+
+
+var tableWidth = adWidth-10;
+var tableHeight = adHeight - 10;
+var contents_809175354 = '<div style="width:' + adWidth + 'px; height: ' + adHeight + 'px; word-wrap:break-word;overflow:hidden;background-color: #FFFFFF;">';
+contents_809175354 += '<table align="left" border="0" cellspacing="0" cellpadding="0" style="table-layout:fixed;background-color: #FFFFFF; width: ' + tableWidth + 'px; height: ' + tableHeight + 'px; margin: 5px;">';
+contents_809175354 += '	<tr>';
+if (imgPath_809175354.length > 0) {
+	contents_809175354 +=  '		<td valign="top" width="' + imgWidth + '" style="width: ' + imgWidth + 'px;"><a href="' + clkThr + '" target="_blank"><img src="' + imgPath_809175354 + '" alt="Нажмите здесь!" title="' + altText + '" width="' + imgWidth + '" height="' + imgHeight + '" border="0" /></a></td>';
+}
+contents_809175354 += '		<td valign="top"><div style="margin-top: 2px; margin-left: 5px; vertical-align: top; text-align: left; width: 175px; height: 100%;"><a href="' + clkThr + '" target="_blank" style="line-height: normal; font-size: 11px;">' + textLink + '</a></div></td>';
+contents_809175354 += '	</tr>';
+contents_809175354 += '</table>';
+contents_809175354 += '</div>';
+contents_809175354 += '';
+
+var fh_809175354 = null;
+if (document.body && document.body.id && document.body.id.length > 0) {
+	fh_809175354=parent.document.getElementById(document.body.id);
+}
+
+if (navigator.appVersion.indexOf("Win")>=0 && parseFloat(navigator.appVersion.substr(navigator.appVersion.indexOf("MSIE ")+5))>=4) {
+	try {
+		if(!fh_809175354 || typeof(inDapIF) == "undefined") {
+			dlWrite();
+		}
+		else {
+			fh_809175354.parentNode.insertAdjacentHTML('beforeEnd', contents_809175354);
+			fh_809175354.style.display='none';
+			document.close();
+		}
+	}
+	catch(e) {
+		dlWrite();
+	}
+}else{dlWrite();}
+function dlWrite() {
+	if(!fh_809175354 || typeof(inDapMgrIf) == "undefined") {
+		document.write(contents_809175354);
+	}
+	else {
+		var elemSpan = document.createElement("span");
+		elemSpan.innerHTML = contents_809175354;
+		fh_809175354.parentNode.appendChild(elemSpan);
+		fh_809175354.style.display='none';	
+	}
+	document.close();
+}
+//]]>  

@@ -1,0 +1,83 @@
+  
+//<![CDATA[
+var imgPath_2048065611 = "http://a.ads2.msads.net/CIS/31/000/000/000/020/303.jpg";
+var imgWidth = 50;
+var imgHeight = 50;
+var textLink=('Как найти самый низкий процент по кредиту').replace(/\\n/gi, '<BR/>');
+textLink = textLink.replace(/<span style="color:#000000;">/gi, '<span>');
+textLink = textLink.replace(/<\/p><p>/gi, '<br/>');
+textLink = textLink.replace(/(<p>|<\/p>)/gi, '');
+var altText=('Нажмите здесь!').replace(/"/gi, '&quot;');
+var adWidth = 240;
+var adHeight = 70;
+
+switch(imgHeight) {
+	case 85:
+		adWidth = 275;
+		adHeight = 95;
+		break;
+	case 70:
+		adWidth = 260;
+		adHeight = 80;
+		break;
+	default:
+		adWidth = 240;
+		adHeight = 70;
+		break;
+}
+
+if(typeof(inDapIF) != "undefined") {
+	parent.dap_Resize(document.body.id, adWidth, adHeight);
+}
+
+
+var clkThr = 'http://g.msn.com/2AD0005M/29000000000097480.1??PID=5889914&amp;UIT=G&amp;TargetID=100543921&amp;AN=2048065611&amp;PG=RUSHP2&amp;ASID=e819804df32b44e084a7160799b16bb3';
+
+
+var tableWidth = adWidth-10;
+var tableHeight = adHeight - 10;
+var contents_2048065611 = '<div style="width:' + adWidth + 'px; height: ' + adHeight + 'px; word-wrap:break-word;overflow:hidden;background-color: #FFFFFF;">';
+contents_2048065611 += '<table align="left" border="0" cellspacing="0" cellpadding="0" style="table-layout:fixed;background-color: #FFFFFF; width: ' + tableWidth + 'px; height: ' + tableHeight + 'px; margin: 5px;">';
+contents_2048065611 += '	<tr>';
+if (imgPath_2048065611.length > 0) {
+	contents_2048065611 +=  '		<td valign="top" width="' + imgWidth + '" style="width: ' + imgWidth + 'px;"><a href="' + clkThr + '" target="_blank"><img src="' + imgPath_2048065611 + '" alt="Нажмите здесь!" title="' + altText + '" width="' + imgWidth + '" height="' + imgHeight + '" border="0" /></a></td>';
+}
+contents_2048065611 += '		<td valign="top"><div style="margin-top: 2px; margin-left: 5px; vertical-align: top; text-align: left; width: 175px; height: 100%;"><a href="' + clkThr + '" target="_blank" style="line-height: normal; font-size: 11px;">' + textLink + '</a></div></td>';
+contents_2048065611 += '	</tr>';
+contents_2048065611 += '</table>';
+contents_2048065611 += '</div>';
+contents_2048065611 += '';
+
+var fh_2048065611 = null;
+if (document.body && document.body.id && document.body.id.length > 0) {
+	fh_2048065611=parent.document.getElementById(document.body.id);
+}
+
+if (navigator.appVersion.indexOf("Win")>=0 && parseFloat(navigator.appVersion.substr(navigator.appVersion.indexOf("MSIE ")+5))>=4) {
+	try {
+		if(!fh_2048065611 || typeof(inDapIF) == "undefined") {
+			dlWrite();
+		}
+		else {
+			fh_2048065611.parentNode.insertAdjacentHTML('beforeEnd', contents_2048065611);
+			fh_2048065611.style.display='none';
+			document.close();
+		}
+	}
+	catch(e) {
+		dlWrite();
+	}
+}else{dlWrite();}
+function dlWrite() {
+	if(!fh_2048065611 || typeof(inDapMgrIf) == "undefined") {
+		document.write(contents_2048065611);
+	}
+	else {
+		var elemSpan = document.createElement("span");
+		elemSpan.innerHTML = contents_2048065611;
+		fh_2048065611.parentNode.appendChild(elemSpan);
+		fh_2048065611.style.display='none';	
+	}
+	document.close();
+}
+//]]>  

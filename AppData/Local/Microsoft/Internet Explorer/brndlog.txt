@@ -1,0 +1,132 @@
+11/13/2012 13:34:09 Checking for existence of Branding Active Setup stub...
+11/13/2012 13:34:09 InternetExplorerBrandGUID didn't exist: Branding component not installed
+11/13/2012 13:34:09 Inf Version is set to "9,00,8112,16421".
+
+11/13/2012 13:34:09    COM initialized with S_OK success code.
+
+11/13/2012 13:34:09 Branding Internet Explorer...
+11/13/2012 13:34:09 Command line is "/mode:isp /peruser".
+
+11/13/2012 13:34:09 Global branding settings are:
+11/13/2012 13:34:09    Context is (0x01C00008) "Internet Content Providers, running from per-user stub";
+11/13/2012 13:34:09    Settings file is        "C:\Program Files\Internet Explorer\Signup\install.ins";
+11/13/2012 13:34:09    Target folder path is   "C:\Program Files\Internet Explorer\Signup".
+11/13/2012 13:34:09 Done.
+
+11/13/2012 13:34:09    About to clear previous branding...
+11/13/2012 13:34:09    Done.
+
+11/13/2012 13:34:09    Processing migration of old settings...
+11/13/2012 13:34:09    Done.
+
+11/13/2012 13:34:09    Processing wininet setup...
+11/13/2012 13:34:09    There are no connection settings to process!
+11/13/2012 13:34:09    Done.
+
+11/13/2012 13:34:09    Processing deletion of connection settings...
+11/13/2012 13:34:09    Existing connection settings weren't specified to be deleted!
+11/13/2012 13:34:09    Done.
+
+11/13/2012 13:34:09    Processing zones HKCU settings...
+11/13/2012 13:34:09    Done.
+
+11/13/2012 13:34:09    Processing local machine policies and restrictions...
+11/13/2012 13:34:09    There are no local machine *.inf files to process!
+11/13/2012 13:34:09    Done.
+
+11/13/2012 13:34:09    Processing current user policies and restrictions...
+11/13/2012 13:34:09    There are no current user *.inf files to process!
+11/13/2012 13:34:09    Done.
+
+11/13/2012 13:34:09    Processing legacy policies and restrictions...
+11/13/2012 13:34:09        There are no local machine *.inf files to process!
+11/13/2012 13:34:09        There are no current user *.inf files to process!
+11/13/2012 13:34:09    There are no legacy *.inf files to process!
+11/13/2012 13:34:09    Done.
+
+11/13/2012 13:34:09    Processing general customizations...
+11/13/2012 13:34:09    Done.
+
+11/13/2012 13:34:09    Processing Help->About customization...
+11/13/2012 13:34:09    Done.
+
+11/13/2012 13:34:09    Processing browser toolbar buttons...
+11/13/2012 13:34:09    There are no toolbar buttons to process!
+11/13/2012 13:34:09    Done.
+
+11/13/2012 13:34:09    Processing root certificates...
+11/13/2012 13:34:09    This feature is for ISPs only!
+11/13/2012 13:34:09    Done.
+
+11/13/2012 13:34:09    Processing default favorites and/or quick links...
+11/13/2012 13:34:09    Creating separate thread for processing default favorites...
+
+11/13/2012 13:34:09    COM initialized with S_OK success code.
+11/13/2012 13:34:09    Done.
+
+11/13/2012 13:34:09    Processing deletion of favorites and/or quick links...
+11/13/2012 13:34:09    None of the favorites folders were specified to be deleted!
+11/13/2012 13:34:09    Done.
+
+11/13/2012 13:34:09    Processing favorites...
+11/13/2012 13:34:09    There are no favorites to add!
+11/13/2012 13:34:09    Done.
+
+11/13/2012 13:34:09    Processing ordering of favorites...
+11/13/2012 13:34:09    Favorites will be put into the default position!
+11/13/2012 13:34:09    Done.
+
+11/13/2012 13:34:09    Processing quick links...
+11/13/2012 13:34:09    There are no quick links to add!
+11/13/2012 13:34:09    Done.
+
+11/13/2012 13:34:09    Processing ordering of quick links...
+11/13/2012 13:34:09    Quick Links will be put into the default position!
+11/13/2012 13:34:09    Done.
+
+11/13/2012 13:34:09    Processing connection settings...
+11/13/2012 13:34:09    There are no connection settings to process!
+11/13/2012 13:34:09    Done.
+
+11/13/2012 13:34:09    Processing TrustedPublisherLockdown restriction...
+11/13/2012 13:34:09    This restriction is not set!
+11/13/2012 13:34:09    Done.
+
+11/13/2012 13:34:09    Creating feeds...
+11/13/2012 13:34:09 Processing [Feeds] section...
+
+11/13/2012 13:34:09 Processing [FavoritesBar] section for Feeds...
+
+11/13/2012 13:34:09 Processing [FavoritesBar] section for WebSlices...
+
+11/13/2012 13:34:10    Done.
+
+11/13/2012 13:34:10    Creating start pages...
+11/13/2012 13:34:10    There are no start pages to add!
+11/13/2012 13:34:10    Done.
+
+11/13/2012 13:34:10    Creating search providers...
+11/13/2012 13:34:10    There are no search providers to add!
+11/13/2012 13:34:10    Done.
+
+11/13/2012 13:34:10    Installing Activities...
+11/13/2012 13:34:10    There are no Actitivies to Install!
+11/13/2012 13:34:10    Done.
+
+11/13/2012 13:34:10    Installing Unattend Favorite bar items...
+11/13/2012 13:34:10 Cannot Open Registry Key HKCU\SOFTWARE\Microsoft\Internet Explorer\AppliedUnattend [error=2]. It probably doesn't exist. Not an error.
+11/13/2012 13:34:10 ProcessUnattendFavBarItems processing favbaritems from location: SOFTWARE\Microsoft\Internet Explorer\UnattendBackup\ActiveSetup\FavoriteBarItems
+11/13/2012 13:34:10 No subkeys found.
+11/13/2012 13:34:10    Done.
+
+11/13/2012 13:34:10    Installing Unattend Activites...
+11/13/2012 13:34:10 Cannot Open Registry Key HKCU\SOFTWARE\Microsoft\Internet Explorer\AppliedUnattend [error=2]. It probably doesn't exist. Not an error.
+11/13/2012 13:34:10 ProcessUnattendActivities processing activities from location: SOFTWARE\Microsoft\Internet Explorer\UnattendBackup\ActiveSetup\Accelerators
+11/13/2012 13:34:10 No subkeys found.
+11/13/2012 13:34:10    Done.
+
+11/13/2012 13:34:10    Refreshing browser settings...
+11/13/2012 13:34:10    Broadcasting "Windows settings change" to all top level windows...
+11/13/2012 13:34:10    Done.
+11/13/2012 13:34:10 Done.
+11/13/2012 13:34:10 Done.

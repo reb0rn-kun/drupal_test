@@ -1,0 +1,45 @@
+
+//<![CDATA[
+var content_19071663 = '<span><p><a href="http://g.msn.com/2AD0009K/84000000000114794.1?!&&PID=10774547&UIT=G&TargetID=100598672&AN=19071663&PG=RU9HT1&ASID=ef4a7ec9221f47db8a297c32b9d32ff0" target="_blank">Пополняйте свой счет Skype в любом QIWI Терминале</a></p></span>';
+
+var fh_19071663 = null;
+if (document.body && document.body.id && document.body.id.length > 0)
+{
+	fh_19071663=parent.document.getElementById(document.body.id);
+}
+
+if (navigator.appVersion.indexOf("Win")>=0 && parseFloat(navigator.appVersion.substr(navigator.appVersion.indexOf("MSIE ")+5))>=4)
+{
+	try
+	{
+		if(!fh_19071663 || typeof(inDapIF) == "undefined")
+		{
+			dlWrite();
+		}
+		else
+		{
+			fh_19071663.parentNode.insertAdjacentHTML('afterBegin', content_19071663);
+			fh_19071663.style.display='none';
+			document.close();
+		}
+	}
+	catch(e)
+	{
+		dlWrite();
+	}
+}else{dlWrite();}
+function dlWrite(){
+	if(!fh_19071663 || typeof(inDapMgrIf) == "undefined")
+	{	
+		document.write(content_19071663);
+	}
+	else
+	{
+		var elemSpan = document.createElement("span");
+		elemSpan.innerHTML = content_19071663;
+		fh_19071663.parentNode.insertBefore(elemSpan, fh_19071663.parentNode.firstChild);
+		fh_19071663.style.display='none';
+	}
+	document.close();
+}
+//]]>

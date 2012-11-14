@@ -1,0 +1,24 @@
+  
+//<![CDATA[
+function getRADIds() { return{"adid":"119000000000046130","pid":"10390317","targetid":"100538532"};}  
+
+if(typeof(inDapIF) != "undefined"){parent.dap_Resize(document.body.id, 1, 1);}  
+try  
+{    
+	if(typeof(inDapIF) != "undefined")    
+	{      
+		parent.ShowAcb(document.body.id, 119000000000046130,  1, 1, "g.msn.com", "2AD00057","10390317", null);    
+	}  
+}  
+catch(e){}
+
+
+var clkThr = 'http://g.msn.com/2AD00057/119000000000046130.1??PID=10390317&amp;UIT=G&amp;TargetID=100538532&amp;AN=976830958&amp;PG=RU9HP7&amp;ASID=3e0e7880d50e47908f9554f7c3e205e6';
+
+
+document.write('<div id="offsetDiv_976830958" style="overflow:hidden;width:1px;height:1px"><a href="' + clkThr + '" target="_blank"><img src="http://ads2.msads.net/CIS/56/000/000/000/000/000.gif" width="1" height="1" alt="Click Here!" border="0" /></a></div>');
+
+
+document.close();
+
+//]]>  

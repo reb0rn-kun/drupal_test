@@ -1,0 +1,73 @@
+
+//<![CDATA[
+//apply the parent style sheets of window to the ad space
+
+if(typeof(inDapIF) != "undefined"){
+	parent.dap_Resize(document.body.id, 240, 70);
+}
+
+var bInIFrame_;
+var bCrossDomain_ = false;
+try {
+	if (top != self)
+	{
+		bInIFrame_ = true;
+		var sParentDomain_ = window.parent.document.domain;
+		var sAdDomain_ = document.domain;
+		if (sParentDomain_ != sAdDomain_)
+		{
+			bCrossDomain_ = true;
+		}
+		else
+			bCrossDomain_ = false;
+	}
+	else
+	{
+		bInIFrame_ = false;
+		bCrossDomain_ = false;
+	}
+} catch (err){
+	bInIFrame_ = false;
+}
+if (bInIFrame_ && bCrossDomain_ == false)
+{
+	var pageList_ = window.parent.document.styleSheets;
+	//walk through parent style sheets
+	if (top != self && pageList_ != null) 
+	{
+		for (p = 0; p < pageList_.length; p++) 
+		{
+			styleSheet = pageList_[p];
+			cssText = '';
+			if (styleSheet.cssText != undefined) 
+			{
+				cssText = styleSheet.cssText;
+			}
+			else 
+			{
+				myrules = styleSheet.cssRules;
+				if (myrules != undefined)
+				{
+					for (i = 0; i < myrules.length; i++) 
+					{
+						cssText += myrules[i].cssText + '\r\n';
+					}
+				}
+			}
+			document.write("<style type=\"text/css\">" + cssText + "</style>");
+		}
+	}
+}
+
+document.write('<style type="text/css"><!--TD.nett_hitl {line-height:14px;font-size:11px;}--></style>');
+document.write('<table align="left" border="0" cellspacing="0" cellpadding="0" style="background-color: #FFFFFF; width: 230px; height: 60px; margin: 5px;">');
+document.write('	<tr>');
+var sImagePath_ = "a.ads1.msads.net/ads/1/0000000001_000000000000000719848.jpg";
+if (sImagePath_.length > 0)
+{document.write('		<td class="nett_hitl" valign="top" width="50" style="width: 50px;"><a href="http://g.msn.com/0AD00001/1688591.2??PID=5889913&amp;UIT=G&amp;TargetID=100553819&amp;AN=555305394&amp;PG=RUSHP1" target="_blank"><img src="http://a.ads1.msads.net/ads/1/0000000001_000000000000000719848.jpg" alt="" width="50" height="50" border="0" /></a></td>');}
+document.write('		<td class="nett_hitl"><div style="margin-top: 2px; margin-left: 5px; vertical-align: top; text-align: left; width: 100%; height: 100%;"><a class="txtads" href="http://g.msn.com/0AD00001/1688591.1??PID=5889913&amp;UIT=G&amp;TargetID=100553819&amp;AN=555305394&amp;PG=RUSHP1" target="_blank" style="line-height: 14px; font-size: 11px;">MSN&#32;&#1052;&#1091;&#1079;&#1099;&#1082;&#1072;&#32;&#8211;&#32;&#1074;&#1077;&#1089;&#1100;&#32;&#1084;&#1091;&#1079;&#1099;&#1082;&#1072;&#1083;&#1100;&#1085;&#1099;&#1081;&#32;&#1084;&#1080;&#1088;&#32;&#1087;&#1086;&#1076;&#32;&#1088;&#1091;&#1082;&#1086;&#1081;&#33;</a></div></td>');
+document.write('	</tr>');
+document.write('</table>');
+
+document.close();
+//]]>
